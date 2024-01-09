@@ -83,9 +83,6 @@ def unregister():
     for cls in reversed(classes):
         bpy.utils.unregister_class(cls)
 
-    del bpy.context.scene.tsynth_params.my_previews
-    del bpy.types.Scene.tsynth_params
-
     tsynth_props.unregister_thumbs()
 
 
